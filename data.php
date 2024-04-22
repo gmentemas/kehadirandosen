@@ -110,6 +110,7 @@ include '../koneksi.php';
                                             <th scope="col">NO</th>
                                             <th scope="col">Nama Dosen</th>
                                             <th scope="col">NIP</th>
+                                             <th scope="col">Email</th>
                                             <th scope="col">Jabatan</th>
                                             <th scope="col">Prodi</th>
                                             <td align="center"><b>Aksi</b></td>
@@ -126,6 +127,7 @@ include '../koneksi.php';
                                             <th scope="row"><?php echo $no++ ?></th>
                                             <td><?php echo $d['nama'] ?></td>
                                             <td><?php echo $d['nip'] ?></td>
+                                            <td><?php echo $d['email'] ?></td>
                                             <td><?php echo $d['jenis']; ?></td>
                                             <td><?php echo $d['prodi'] ?></td>
                                             <td align="center"><a href="edit.php?nip=<?php echo $d['nip'] ?>" class="btn btn-sm btn-primary">Edit</a> <a href="hapus.php?nip=<?php echo $d['nip'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('yakin hapus?')">Hapus</a>
